@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 
 const Card = ({coffee}) => {
     const {
@@ -14,7 +15,8 @@ const Card = ({coffee}) => {
     return (
         <div>
           
-            <div className="card bg-base-100 h-[500px] shadow-xl transition hover:scale-105 ">
+        <Link to={`/coffeeDetails/${id}`}>
+        <div className="card bg-base-100 h-[500px] shadow-xl transition hover:scale-105 ">
   <figure className="h-[300px] px-10 pt-10">
     <img
       src={image}
@@ -28,7 +30,7 @@ const Card = ({coffee}) => {
       <button className="btn btn-primary">Buy Now</button>
     </div>
   </div>
-</div>
+</div></Link>
         </div>
     );
 };

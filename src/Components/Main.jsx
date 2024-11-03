@@ -11,7 +11,7 @@ const Main = () => {
     <div>
       <Hero></Hero>
       <Heading
-        title="Welcome To Dashboard"
+        title="Welcome To Home Page"
         subtitle="Manage coffee that you have previously added as favorite. You can view ir remove them from here "
       />
 

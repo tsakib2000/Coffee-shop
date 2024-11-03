@@ -4,19 +4,19 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to='/'>Home</NavLink>
+        <NavLink className={({isActive})=>`font-bold ${isActive? 'text-warning':'hover:text-warning'}`} to='/'>Home</NavLink>
       </li>
       <li>
-      <NavLink to='/coffee'>Coffees</NavLink>
+      <NavLink className={({isActive})=>`font-bold  ${isActive? 'text-warning':'hover:text-warning'}`} to='/coffee'>Coffees</NavLink>
       </li>
       <li>
-        <NavLink to='/dashboard'>Dashboard</NavLink>
+        <NavLink className={({isActive})=>`font-bold ${isActive? 'text-warning':'hover:text-warning'}`} to='/dashboard'>Dashboard</NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar backdrop-blur-xl bg-white/30 z-50 fixed container mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
